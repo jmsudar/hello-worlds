@@ -1,0 +1,39 @@
+name: CD - Tag, Changelog, Create Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        tags: true
+
+    - name: Generate Changelog
+      id: changelog
+      uses: mikepenz/release-changelog-builder-action@v4.2.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Bump Version
+      id: bump_version
+      uses: anothrNick/github-tag-action@1.67.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DEFAULT_BUMP: minor
+        RELEASE_BRANCHES: main
+        WITH_V: true
+
+    - name: Create Release
+      uses: ncipollo/release-action@v1.14.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        name: Release ${{ steps.bump_version.outputs.new_tag }}
+        tag: ${{ steps.bump_version.outputs.new_tag }}
+        body: ${{ steps.changelog.outputs.changelog }}
