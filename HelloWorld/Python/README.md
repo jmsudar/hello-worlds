@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is it! A Python Hello, World! application. In this app, you will write a single-line Python program that prints "Hello, World!" to the console. That sounds simple (and it is) but don't let that fool you: it is programming. It is giving an explicit instruction to the computer and executing that instruction. If you do this, you have officially programmed!
+This is it! A Python Hello, World! application. In this app, you will write a single-line Python program that prints "Hello, World!" to the console. That sounds simple (and it is) but don't let that fool you: it is programming. It is giving an explicit instruction to the computer and executing that instruction. If you do this, you have officially programmed! This is an important first step and your official induction into being a programmer.
 
 ## What You'll Learn/Practice
 
