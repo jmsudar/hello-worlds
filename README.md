@@ -267,6 +267,10 @@ Many public libraries have resources for online learning, and this may include e
 
 I'm calling [dotnetplaybook.com](https://dotnetplaybook.com/) out specifically because I find his solutions and explanations to be clear, easy to follow, and unafraid of asking questions like "Which is better, WebSockets or SignalR?" That may sound like nonsense right now, but it's a good resource for later in your journey to become a developer.
 
+#### Vim Adventures
+
+If you really want to up your Fu, Vim is a powerful but intimidating text editor. The best method I've found for learning Vim is the [Vim Adventures](https://vim-adventures.com/) online video game. Early on, learning Vim can be frustrating, so you should minimize exposure to it until you're more comfortable with the fundamentals, but later on if you find yourself in an operations tangential role, it is invaluable.
+
 ### Who am I?
 
 I am a self-taught developer who benefitted from several generous mentors and endless online resources as I worked to transition to a career in technology. I hope to contribute to that knowledge base and pay forward the generosity I received.
