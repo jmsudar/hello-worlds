@@ -74,4 +74,31 @@ If it doesn't work, take a close look at the error reporting. Python is pretty f
 
 </details>
 
+## What Did We Just Do?
+
+We told the computer, using the cli, that we want it to run the `python` interpreter. The Python interpreter can actually run by itself, first off. If you type `python` and nothing else and press enter, the interpreter will open like below:
+
+```
+~/Dropbox/Programming/hello-worlds/HelloWorld/Python - python
+Python 3.11.5 (main, Sep  9 2023, 13:35:08) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+```
+
+At this line, I could actually run the exact same line as is in the `hello_world.py` file and it will run:
+
+```
+>>> print("Hello, World!")
+Hello, World!
+```
+
+(as a quick aside, type `exit()` and press enter to close the interpreter.)
+
+```
+>>> exit()
+~/Dropbox/Programming/hello-worlds/HelloWorld/Python -
+```
+
+So what does that mean with regards to the command we just ran? It means that when we type `python hello_world.py` and press enter, we tell the computer, "use the Python interpreter with a single argument, `hello_world.py`, which corresponds to a file with Python instructions in side of it. Python opens the file, reads the instruction, and writes "Hello, World!" to the console.
+
 Congratulations, you have run your very first Python program!
