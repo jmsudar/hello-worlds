@@ -14,7 +14,7 @@ This is it! A Python Hello, World! application. In this app, you will write a si
 
 ## Procedure
 
-Navigate to your directory of Python solutions for this repo.
+Navigate to your directory of Python solutions for this problem.
 
 ```
 cd ~/programming/hello-worlds-solutions/python
@@ -42,7 +42,7 @@ Next, open Sublime Text on your computer, navigate to the directory, and open th
 
 In another tab, open `~/programming/hello-worlds/HelloWorld/Python/hello_world.py`
 
-Copy the file contents to your solution file, save, it and then compile and run the program.
+Type out the file contents to your solution file, save, it and then compile and run the program.
 
 In the command below, `python` is the instruction that tells your computer what to do (run Python) and `hello_world.py` is the argument you are passing in, literally telling the computer what to run with Python.
 
