@@ -321,6 +321,7 @@ cython_debug/
 
 # Compiled class files
 *.class
+**/*.class
 
 # Log files
 *.log
