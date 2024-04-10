@@ -109,6 +109,29 @@ If you don't see that, run another brew command.
 brew install python
 ```
 
+#### Java
+
+Java is also a programming language and runtime environment. It also comes pre-installed on most Mac machines. To begin with, type
+
+```
+java --version
+```
+
+If you see output similar to the below, you're golden.
+
+```
+~/Dropbox/Programming/hello-worlds - java --version
+openjdk 21 2023-09-19
+OpenJDK Runtime Environment Homebrew (build 21)
+OpenJDK 64-Bit Server VM Homebrew (build 21, mixed mode, sharing)
+```
+
+Really the only thing to be concerned with is if your computer says Java is not a recognized command. There are many different versions of Java, but managing them gets messy so we are going to hold off on worrying about that until we need to. For now, just have _a_ version of Java, and if you don't see one, run
+
+```
+brew install java
+```
+
 #### Sublime Text
 
 If you'd rather use a different text editor, go for it! Otherwise, use this command to install Sublime Text. You will use this got writing/copying your versions of the solutions.
