@@ -304,6 +304,10 @@ Software development is inherently collaborative. As such, plenty of people othe
 
 Critically important note: I am not a Husky, Go Cougs! That being said, the University of Washington posts some of  their introductory computer science course materials online. I used the posted materials for their CSE 142 class to learn the basics of Java and it looks like the homeworks at least are [still available](https://courses.cs.washington.edu/courses/cse142/22sp/homework.shtml).
 
+#### Harvard
+
+Harvard, AKA "a school in Boston," offers many of their courses for free. If you want a certificate of completion, you have to pay, but if you're just looking for practice, this [Introduction to Python Programming](https://cs50.harvard.edu/python/2022/) would be a great starting point! If you want to dig deeper than that, you can browse their [catalog of courses](https://pll.harvard.edu/catalog?topics%5B715%5D=715&max_price=&start_date=&keywords=).
+
 #### Your Public Library
 
 Many public libraries have resources for online learning, and this may include excellent resources like LinkedIn Learning. If you are in the Seattle area, for example, and you have your library card, check out their [online learning](https://www.spl.org/online-resources/online-learning) section.
