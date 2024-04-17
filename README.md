@@ -293,6 +293,17 @@ Open the solution in each language and follow the instructions in the README wit
 Let's dig into it. The classic Hello, World! problem is solved here in
 
 - [Python](/HelloWorld/Python/)
+- [Java](/HelloWorld/Java/)
+- [Shell](/HelloWorld/Shell/)
+
+#### Hello, Methods!
+
+Reusability is programming gospel. This module introduces you to the very beginning of reusability by showing you how to break behavior out into distinct, reusable functions (also known as `methods`.)
+
+- [Overview](/HelloMethods/)
+- [Python](/HelloMethods/Python/)
+- [Java](/HelloMethods/Java/)
+- [Shell](/HelloMethods/Shell/)
 
 ## Additional Resources
 
