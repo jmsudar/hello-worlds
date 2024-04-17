@@ -215,7 +215,96 @@ You've installed all your dependencies, so let's do the pre-reqs to get things w
 - 3. Create a directory to hold your solutions to the problems for each language
 - 4. Clone this git repository
 
-type out and run each of the commands below in the terminal
+#### Creating a GitHub Account and an SSH Key
+
+First, you will need a GitHub account. These accounts are free, and having one enables you to browse and clone other peoples' code, which is critical to participating in the Open Source community, or even just in using code that other people write. Head to [github.com](https://github.com) and click Sign Up to get started.
+
+Once you've created your GitHub account, proceed to the next step.
+
+Next, you will need an SSH key on your machine. SSH stands for `Secure Shell Protocol`, and it is a way to securely, via encrypted traffic, transmit data at a remote location, in this case to and from a remote GitHub repository (this one). This repository is public, and anyone can clone it, but you still need to be identified as you, because GitHub is a by developers/for developers tool, and developers care about doing things securely.
+
+You can find full instructions on how to create an SSH key [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent), but in the meantime I've copied what I think are the important points from that page to try and get you started as quick as possible.
+
+In your terminal, run the command below, subbing the example email for the one you just used to make your GitHub account.
+
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+You'll see the output below as well as a prompt asking you where you'd like to save the file. You can just press enter at this point to save it to the default location, nothing else is needed right now.
+
+```
+> Generating public/private ALGORITHM key pair.
+> Enter a file in which to save the key (/Users/<your user>/.ssh/id_ALGORITHM):
+```
+
+Next, you'll be prompted to create a secure passphrase. At this point in time I would suggest _not_ creating a passphrase, if only because it will slow everything down in that you have to enter the passphrase every time you do a git fetch, pull, or clone. Keep it simple for now and just press enter twice without entering a passphrase
+
+```
+> Enter passphrase (empty for no passphrase):
+> Enter same passphrase again:
+```
+
+Run this command in order to start your Mac's `ssh-agent` in the background. This application is what the terminal will use for its secure communication.
+
+```
+eval "$(ssh-agent -s)"
+```
+
+Next, you need to add your new SSH key to the configuration file for your ssh-agent. First, check if it exists with the command below. This command is telling your computer, look in my home directory (`~`), in a hidden directory called `.ssh`, for a file called `config`, and open it if it's there.
+
+```
+open ~/.ssh/config
+```
+
+If you see the reply, `> The file /Users/<your user>/.ssh/config does not exist.` then run the command below, otherwise skip it and go straight to copying the lines.
+
+```
+touch ~/.ssh/config
+open ~/.ssh/config
+```
+
+This should have opened a file in your default Text Editor application.
+
+Copy these lines into your SSH config file.
+
+```
+Host github.com
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/id_ed25519
+```
+
+Save your changes and close the file.
+
+#### Adding your new SSH key to your GitHub account
+
+Okay PHEW, almost there but not quite: next we have to add your new SSH key to your GitHub account. Once again, full instructions are [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account), but I will try to make them concise below.
+
+First, run the command below in order to copy-paste the public key of your new SSH key to your machine's clipboard. Public/private key encryption is beyond the scope of this repo, but for now, just know that this is a critical part of encrypted traffic on the web.
+
+```
+pbcopy < ~/.ssh/id_ed25519.pub
+```
+
+Within GitHub, click on your profile picture, then `Settings`.
+
+On the left, under `Access`, click `SSH and GPG keys`.
+
+Click `New SSH key` or `Add SSH key`.
+
+For Title, put whatever descriptive name you want.
+
+Under Key Type, leave it as `Authentication Key`. Authentication, just as an FYI, means "I am who I say I am," whereas Authorization means "I am allowed to do X things."
+
+In the Key box, paste the the key you copied with your `pbcopy` command up above.
+
+Click `Add SSH Key ` to finalize the process.
+
+That's that! You should now be allowed to continue with the steps below and clone this repository.
+
+#### Cloning This Repository
+
+Type out and run each of the commands below in the terminal
 
 ```
 cd ~
