@@ -4,14 +4,27 @@ So time for a small confession: when I said that programming is the act of givin
 
 To get around this, programmers try to write their code generally, and most importantly, **in a way that can be reused**. In this problem, we are going to work on the foundations of reusable programming.
 
-## Methods, Functions, Units
+### Leveling Up the Instructions
+
+The instructions for this set of apps are going to start getting a little more complicated! At this point you've practiced navigating around the terminal, so some instructions are now going to be multi-line instead of single-line. The reason for this is you now know enough about how to use the terminal to understand that you are doing each of these lines distinctly.
+
+Congrats on your first programming level up!
+
+### Methods, Functions, Units
 
 All three of the terms above refer to the same thing: a distinct piece of code that can be `called ` by another piece of code. This is incredibly powerful: it means that you can define behavior for your program, and you can do that behavior as many times as you need to, whenever you need to. This is the very _essence_ of software development; it allows you to engineer complex flows that can be combined and leveraged and reused to accomplish complex things.
 
 But at first this is going to seem pretty basic, so bear with me: all that's going to happen in this first exercise is you're going to take your behavior, the printing of "Hello, World!" to the console, and you're going to move it from the `main` functionality and into its own method. Then, you're going to call it from `main`.
 
-## So what, what does that get us?
+### So what, what does that get us?
 
 Well, you'll see! The short answer is: not much, yet. You'll see that this adds a little more extensibility to your program, but you won't really see the benefits of this change for a lesson or two. When you do though, I guarantee there will be a real _click_ moment.
 
-Be patient, young padawan...
+## What's the Same?
+
+- Each application will use a single method to define their behavior
+- Each method that defines behavior will be called within `main`
+
+## What's Different?
+
+- Once again, syntax and convention differs in how to define a method
